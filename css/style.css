@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: blue;
 }
 
 #logo {
@@ -88,17 +87,6 @@ li.dropdown {
     display: block;
 }
 
-.bluberry{
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.slides{
-  position: relative;
-  width: 100%;
-  height: 30%;
-}
 
 /*slider*/
 @keyframes slidy {
@@ -135,5 +123,38 @@ div#slider figure {
 #slide-footbar{
   background: #4caf50;
   padding-top: 7px;
+
+}
+
+/*Produtos*/
+.master-produtos {
+  padding-left: 13%;
+  width: 1000px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.master-produtos h1{
+  text-align: center;
+}
+
+.produtos{
+  width:214px;
+  height:200px;
+  border:1px solid #000;
+  background:#A6E22E;
+  margin:0px 0px 20px 20px;
+  float:left;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 40%
 
 }
