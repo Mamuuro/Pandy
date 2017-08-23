@@ -1,9 +1,7 @@
-
-
 body {
   margin: 0;
   padding: 0;
-  background: green;
+  background: blue;
 }
 
 #logo {
@@ -27,6 +25,8 @@ body {
 }
 
 .navigation-bar {
+  position: absolute;
+  z-index: 9999;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -36,15 +36,8 @@ body {
   text-align:center;
 }
 .navigation-bar img{
-float:left;
+float: left;
 }
-
-
-#menu {
-  
-  float: right;
-}
-
 
 li {
     font-family: "brokman";
@@ -93,4 +86,54 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.bluberry{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slides{
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+
+/*slider*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { 
+  overflow: hidden; 
+    height: 600px;
+}
+div#slider figure img { 
+  width: 20%; 
+  float: left; 
+}
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+#slide-footbar{
+  background: #4caf50;
+  padding-top: 7px;
+
 }
